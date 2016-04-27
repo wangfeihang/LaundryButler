@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_information"
+            android:icon="@drawable/account_information"
+            android:title="我的资料"/>
+        <item
+            android:id="@+id/nav_collection"
+            android:icon="@drawable/account_like"
+            android:title="我的收藏"/>
+        <item
+            android:id="@+id/nav_score"
+            android:icon="@drawable/account_score"
+            android:title="我的积分"/>
+        <item
+            android:id="@+id/nav_password"
+            android:icon="@drawable/change_password"
+            android:title="修改密码"/>
+        <item
+            android:id="@+id/nav_change_account"
+            android:icon="@drawable/change_account"
+            android:title="切换账号"/>
+        <item
+            android:id="@+id/nav_about_us"
+            android:icon="@drawable/acount_about_us"
+            android:title="关于我们"/>
+    </group>
+</menu>
