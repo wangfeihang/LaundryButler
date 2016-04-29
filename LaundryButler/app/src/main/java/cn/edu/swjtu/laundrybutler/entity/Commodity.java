@@ -5,9 +5,18 @@ package cn.edu.swjtu.laundrybutler.entity;
  */
 public class Commodity {
     private int ID;
+    private int shopID;
     private String commodityName;
     private float commodityPrice;
     private String commodityBriefIntroduction;
+
+    public void setShopID(int shopID) {
+        this.shopID = shopID;
+    }
+
+    public int getShopID() {
+        return shopID;
+    }
 
     public void setID(int ID) {
         this.ID = ID;
