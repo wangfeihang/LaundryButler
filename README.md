@@ -69,12 +69,12 @@ Android客户端SDK
 ###重要类的解释
 ####ProxyClient
  1.用途：将对网络的操作进行封装。
-    *包括对网络状态的检查：isConnected()。
-    *对广播的绑定subscribeBroadcast(String topic)，其中topic参数传递消息和接收消息的一个参数，实现消息传递的对应
-    *还有对Push消息的接收。
+    * 包括对网络状态的检查：isConnected()。
+    * 对广播的绑定subscribeBroadcast(String topic)，其中topic参数传递消息和接收消息的一个参数，实现消息传递的对应
+    * 还有对Push消息的接收。
  2.注意：
-    *创建时必须设置Config
-    *这个类在Application中只能被创建一次，如果设置在Application初始化中要保证Application只被创建一次，否则服务在远端进程中运行时会再次创建Application，会使ProxyClient被创建两次，从而出现错误
+    * 创建时必须设置Config
+    * 这个类在Application中只能被创建一次，如果设置在Application初始化中要保证Application只被创建一次，否则服务在远端进程中运行时会再次创建Application，会使ProxyClient被创建两次，从而出现错误
 ####Config
  1.用途：网络连接所需要的配置信息，如host、pushId（随机生成，SharedPreference保存）、ConnectCallback、PushCallback等。
  2.注意：创建之后最好设置好host的值之后再创建ProxyClient。ConnectCallback、PushCallback等可以后面进行设置。
